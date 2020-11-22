@@ -1,12 +1,14 @@
-values = [3, 5, 7]
-words = ['fizz', 'buzz', 'baz']
+FizzBuzz =[[3, 'fizz'],[5, 'buzz']]
+FizzBuzz.append([7, 'baz'])
 
 for i in range(1,100):
     out = ''
-    for x in values:
-        if i%x == 0:
-            out += words[values.index(x)]
+    j=0
+    for x in FizzBuzz:
+        if i%FizzBuzz[j][0] == 0:
+            out += FizzBuzz[j][1]
+        j+=1
     if not out:
-      print(i)
+        print(i)
     else:
         print (out)
