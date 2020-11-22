@@ -1,0 +1,12 @@
+values = [3, 5, 7]
+words = ['fizz', 'buzz', 'baz']
+
+for i in range(1,100):
+    out = ''
+    for x in values:
+        if i%x == 0:
+            out += words[values.index(x)]
+    if not out:
+      print(i)
+    else:
+        print (out)
